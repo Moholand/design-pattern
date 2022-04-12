@@ -77,5 +77,13 @@ echo $user1->getName();
 echo ' - ';
 echo $user1->getEmail();
 
+echo '<br />';
+
+$user2 = UserCreateFactory::create('Employer', 'hamid', 'hamid@gmail.com');
+echo $user2->getName();
+echo ' - ';
+echo $user2->getEmail();
+
 // Output:
 // Candidate with name: behroz - Candidate with email: behroz@gmail.com
+// Employer with name: hamid - Employer with email: hamid@gmail.com
