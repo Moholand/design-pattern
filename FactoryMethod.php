@@ -2,10 +2,10 @@
 // User interface
 interface UserDetailInterface
 {
-    public function setName($name);
-    public function setEmail($email);
-    public function getName();
-    public function getEmail();
+    public function setName(string $name): void;
+    public function setEmail(string $email): void;
+    public function getName(): string;
+    public function getEmail(): string;
 }
 
 // User classes - with Admin - Candidate - Employer Roles
@@ -14,22 +14,22 @@ class Admin implements UserDetailInterface
     private $name;
     private $email;
 
-    public function setName($name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
 
-    public function setEmail($email)
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'Admin with name: ' . $this->name;
     }
 
-    public function getEmail()
+    public function getEmail(): string
     {
         return 'Admin with email: ' . $this->email;
     }
@@ -40,22 +40,22 @@ class Candidate implements UserDetailInterface
     private $name;
     private $email;
 
-    public function setName($name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
 
-    public function setEmail($email)
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'Candidate with name: ' . $this->name;
     }
 
-    public function getEmail()
+    public function getEmail(): string
     {
         return 'Candidate with email: ' . $this->email;
     }
@@ -66,22 +66,22 @@ class Employer implements UserDetailInterface
     private $name;
     private $email;
 
-    public function setName($name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
 
-    public function setEmail($email)
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'Employer with name: ' . $this->name;
     }
 
-    public function getEmail()
+    public function getEmail(): string
     {
         return 'Employer with email: ' . $this->email;
     }
@@ -90,13 +90,13 @@ class Employer implements UserDetailInterface
 // Interface for factory class
 interface UserCreateInterface
 {
-    public static function create($role);
+    public static function create(string $role): UserDetailInterface;
 }
 
 // Factory class for create user
 class UserCreateFactory implements UserCreateInterface
 {
-    public static function create($role)
+    public static function create(string $role): UserDetailInterface
     {
         switch ($role) {
             case 'Admin':
