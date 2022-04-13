@@ -76,15 +76,15 @@ class Employer implements UserDetailInterface
 // Interface for factory class
 interface UserCreateInterface
 {
-    public static function create($type, $name, $email);
+    public static function create($role, $name, $email);
 }
 
 // Factory class for create user
 class UserCreateFactory implements UserCreateInterface
 {
-    public static function create($type, $name, $email)
+    public static function create($role, $name, $email)
     {
-        switch ($type) {
+        switch ($role) {
             case 'Admin':
                 return new Admin($name, $email);
                 break;
