@@ -64,6 +64,7 @@ interface CvBuilderInterface
     public function getCv(): Cv;
 }
 
+// A builder for create english cv from Cv class
 class EnglishCvBuilder implements CvBuilderInterface
 {
     private Cv $cv;
@@ -104,6 +105,7 @@ class EnglishCvBuilder implements CvBuilderInterface
     }
 }
 
+// A builder for create persian cv from Cv class
 class PersianCvBuilder implements CvBuilderInterface
 {
     private Cv $cv;
