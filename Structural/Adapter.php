@@ -1,46 +1,39 @@
 <?php
+/*
+ * Message Interface - Adapter classes should implement this!
+ */
 interface Message
 {
     public function send(string $title, string $body): void;
 }
 
-class EmailMessage implements Message
-{
-    protected string $address;
-
-    public function __construct(string $address)
-    {
-        $this->address = $address;
-    }
-
-    public function send(string $title, string $body): void
-    {
-        echo 'Email sent to ' . $this->address . '<br />' .
-             'title: ' . $title . '<br />' . 'body: ' . $body . '<br />';
-    }
-}
-
+/*
+ * Telegram Api - Contract for send message with telegram!
+ */
 class TelegramApi
 {
-    protected $account;
+    protected string $account;
 
-    public function __construct($account)
+    public function __construct(string $account)
     {
         $this->account = $account;
     }
 
-    public function login()
+    public function login(): void
     {
         echo 'Login to telegram account with ' . $this->account . ' account' . '<br />';
     }
 
-    public function sendMessage($userId, $message)
+    public function sendMessage(string $userId, string $message): void
     {
         echo 'Send message to '. $userId . '<br />' .
              'message: ' . $message;
     }
 }
 
+/*
+ * Telegram message adapter class
+ */
 class TelegramMessage implements Message
 {
     protected TelegramApi $telegramApi;
@@ -54,7 +47,7 @@ class TelegramMessage implements Message
 
     public function send(string $title, string $body): void
     {
-        $telegramMessage = $title . '---' . $body;
+        $telegramMessage = $title . ' - ' . $body . '<br />';
 
         $this->telegramApi->login();
 
@@ -63,20 +56,81 @@ class TelegramMessage implements Message
 }
 
 /*
- * Client
+ * Whatsapp Api - Contract for send message with whatsapp!
  */
-function sendMessage(Message $message): void
+class WhatsappApi
 {
-    $message->send('You have message!', 'This message is for you!');
+    protected string $accountNumber;
+
+    public function __construct(string $accountNumber)
+    {
+        $this->accountNumber = $accountNumber;
+    }
+
+    public function login(): void
+    {
+        echo 'Login to whatsapp account with ' . $this->accountNumber . ' account number' . '<br />';
+    }
+
+    public function sendMessage(string $userNumber, string $message): void
+    {
+        echo 'Send message to '. $userNumber . '<br />' .
+            'message: ' . $message;
+    }
 }
 
-$message = new EmailMessage('mohammad@gmail.com');
+/*
+ * Whatsapp message adapter class
+ */
+class WhatsappMessage implements Message
+{
+    protected WhatsappApi $whatsappApi;
+    protected string $userNumber;
 
-sendMessage($message);
+    public function __construct(WhatsappApi $whatsappApi, string $userNumber)
+    {
+        $this->whatsappApi = $whatsappApi;
+        $this->userNumber = $userNumber;
+    }
 
-echo '--------------------------------------------' . '<br />';
+    public function send(string $title, string $body): void
+    {
+        $whatsappMessage = $title . ' - ' . $body . '<br />';
+
+        $this->whatsappApi->login();
+
+        $this->whatsappApi->sendMessage($this->userNumber, $whatsappMessage);
+    }
+}
+
+/*
+ * Client
+ */
+function sendMessage(Message $message, string $title, string $body): void
+{
+    $message->send($title, $body);
+}
 
 $telegram = new TelegramApi('@irantalent');
 $telegramMessage = new TelegramMessage($telegram, '@mohammad-hr');
 
-sendMessage($telegramMessage);
+$whatsapp = new WhatsappApi('09121121212');
+$whatsappMessage = new WhatsappMessage($whatsapp, '09362568878');
+
+sendMessage($telegramMessage, 'You have telegram message!', 'This message is for you!');
+echo '--------------------------------------------' . '<br />';
+sendMessage($whatsappMessage, 'You have whatsapp message!', 'This message is for you!');
+
+
+/*
+ * Output:
+ *
+ * Login to telegram account with @irantalent account
+ * Send message to @mohammad-hr
+ * message: You have telegram message! - This message is for you!
+ * --------------------------------------------
+ * Login to whatsapp account with 09121121212 account number
+ * Send message to 09362568878
+ * message: You have whatsapp message! - This message is for you!
+ *
+ */
