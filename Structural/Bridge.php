@@ -268,3 +268,50 @@ echo '=============================' . '<br />' .
 
 $mobileView->changeResource($candidateResource);
 displayUser($mobileView);
+
+/*
+ * Output:
+ *
+ * ** Desktop views:
+ * =============================
+ * * Employer Desktop view:
+ * =============================
+ * Image url: https://www.google.com/url?sa=i&url
+ * ---------------------------------
+ * Name & Email: Irantalent
+ * irantalent@irantalent.com
+ * Description: 2730 job opportunities waiting for you to apply
+ * ---------------------------------
+ * Website: https://www.irantalent.com
+ * =============================
+ * * Candidate Desktop view:
+ * =============================
+ * Image url: https://www.google.com/url?sa=i&url=https%iira.com
+ * ---------------------------------
+ * Name & Email: mohammad
+ * mohammad@gmail.com
+ * Description: Software Engineer
+ * ---------------------------------
+ * Website: https://www.moholand.com
+ * =============================
+ * ** Mobile views:
+ * =============================
+ * * Employer Mobile view:
+ * =============================
+ * Image url: https://www.google.com/url?sa=i&url
+ * ---------------------------------
+ * Name & Email: Irantalent
+ * irantalent@irantalent.com
+ * ---------------------------------
+ * Website: https://www.irantalent.com
+ * =============================
+ * * Candidate Mobile view:
+ * =============================
+ * Image url: https://www.google.com/url?sa=i&url=https%iira.com
+ * ---------------------------------
+ * Name & Email: mohammad
+ * mohammad@gmail.com
+ * ---------------------------------
+ * Website: https://www.moholand.com
+ *
+ */
