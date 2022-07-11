@@ -9,3 +9,13 @@
   <li>Prototype</li>
   <li>Singleton</li>
 </ul>
+<h5>Structural Design Patterns</h5>
+<ul>
+  <li>Adapter</li>
+  <li>Bridge</li>
+  <li>Composite</li>
+  <li>Decorator</li>
+  <li>Facade</li>
+  <li>Flyweight</li>
+  <li>Proxy</li>
+</ul>
