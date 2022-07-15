@@ -19,3 +19,16 @@
   <li>Flyweight</li>
   <li>Proxy</li>
 </ul>
+<h5>Behavioral Design Patterns</h5>
+<ul>
+  <li>Chain of Responsibility</li>
+  <li>Command</li>
+  <li>Iterator</li>
+  <li>Mediator</li>
+  <li>Memento</li>
+  <li>Observer</li>
+  <li>State</li>
+  <li>Strategy</li>
+  <li>Template Method</li>
+  <li>Visitor</li>
+</ul>
