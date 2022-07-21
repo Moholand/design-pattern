@@ -3,8 +3,8 @@
 
 <h5>Creational Design Patterns</h5>
 <ul>
-  <li>Factory Method: Create user with different roles</li>
-  <li>Abstract Factory</li>
+  <li>Factory Method:  Create user with different roles</li>
+  <li>Abstract Factory: Create job positions</li>
   <li>Builder</li>
   <li>Prototype</li>
   <li>Singleton</li>
