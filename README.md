@@ -6,7 +6,7 @@
   <li>Factory Method: Create user with different roles</li>
   <li>Abstract Factory: Create job positions</li>
   <li>Builder: Create CV for candidate</li>
-  <li>Prototype</li>
+  <li>Prototype: Post job position</li>
   <li>Singleton</li>
 </ul>
 <h5>Structural Design Patterns</h5>
