@@ -7,7 +7,7 @@
   <li>Abstract Factory: Create job positions</li>
   <li>Builder: Create CV for candidate</li>
   <li>Prototype: Post job position</li>
-  <li>Singleton</li>
+  <li>Singleton: Post job position</li>
 </ul>
 <h5>Structural Design Patterns</h5>
 <ul>
