@@ -11,7 +11,7 @@
 </ul>
 <h5>Structural Design Patterns</h5>
 <ul>
-  <li>Adapter</li>
+  <li>Adapter: Shared message on social networks</li>
   <li>Bridge</li>
   <li>Composite</li>
   <li>Decorator</li>
