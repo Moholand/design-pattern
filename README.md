@@ -12,7 +12,7 @@
 <h5>Structural Design Patterns</h5>
 <ul>
   <li>Adapter: Shared message on social networks</li>
-  <li>Bridge</li>
+  <li>Bridge: Display user information</li>
   <li>Composite</li>
   <li>Decorator</li>
   <li>Facade</li>
