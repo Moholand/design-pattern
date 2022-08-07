@@ -13,7 +13,7 @@
 <ul>
   <li>Adapter: Shared message on social networks</li>
   <li>Bridge: Display user information</li>
-  <li>Composite</li>
+  <li>Composite: Create Todo list</li>
   <li>Decorator</li>
   <li>Facade</li>
   <li>Flyweight</li>
