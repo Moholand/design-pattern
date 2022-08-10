@@ -14,7 +14,7 @@
   <li>Adapter: Shared message on social networks</li>
   <li>Bridge: Display user information</li>
   <li>Composite: Create Todo list</li>
-  <li>Decorator</li>
+  <li>Decorator: Add feature to product group</li>
   <li>Facade</li>
   <li>Flyweight</li>
   <li>Proxy</li>
