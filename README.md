@@ -15,7 +15,7 @@
   <li>Bridge: Display user information</li>
   <li>Composite: Create Todo list</li>
   <li>Decorator: Add feature to product group</li>
-  <li>Facade</li>
+  <li>Facade: Create slug</li>
   <li>Flyweight</li>
   <li>Proxy</li>
 </ul>
