@@ -16,7 +16,7 @@
   <li>Composite: Create Todo list</li>
   <li>Decorator: Add feature to product group</li>
   <li>Facade: Create slug</li>
-  <li>Flyweight</li>
+  <li>Flyweight: Post a job position</li>
   <li>Proxy</li>
 </ul>
 <h5>Behavioral Design Patterns</h5>
