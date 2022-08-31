@@ -23,7 +23,7 @@
 <ul>
   <li>Chain of Responsibility: Create middleware</li>
   <li>Command: Create calculator</li>
-  <li>Iterator</li>
+  <li>Iterator: Select candidate algorithm</li>
   <li>Mediator</li>
   <li>Memento</li>
   <li>Observer</li>
