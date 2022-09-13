@@ -26,7 +26,7 @@
   <li>Iterator: Select candidate algorithm</li>
   <li>Mediato: Chat applicationr</li>
   <li>Memento: Calculator</li>
-  <li>Observer</li>
+  <li>Observer: User repository</li>
   <li>State</li>
   <li>Strategy</li>
   <li>Template Method</li>
