@@ -28,7 +28,7 @@
   <li>Memento: Calculator</li>
   <li>Observer: User repository</li>
   <li>State: Guess number game</li>
-  <li>Strategy</li>
+  <li>Strategy: Payment</li>
   <li>Template Method</li>
   <li>Visitor</li>
 </ul>
