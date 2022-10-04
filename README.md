@@ -30,5 +30,5 @@
   <li>State: Guess number game</li>
   <li>Strategy: Payment</li>
   <li>Template Method: ORM</li>
-  <li>Visitor: Report</li>
+  <li>Visitor</li>
 </ul>
