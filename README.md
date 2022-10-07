@@ -29,6 +29,6 @@
   <li>Observer: User repository</li>
   <li>State: Guess number game</li>
   <li>Strategy: Payment</li>
-  <li>Template Method: ORM</li>
+  <li>Template Method</li>
   <li>Visitor</li>
 </ul>
