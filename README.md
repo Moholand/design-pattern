@@ -27,7 +27,7 @@
   <li>Mediato: Chat applicationr</li>
   <li>Memento: Calculator</li>
   <li>Observer: User repository</li>
-  <li>State: Guess number game</li>
+  <li>State</li>
   <li>Strategy</li>
   <li>Template Method</li>
   <li>Visitor</li>
