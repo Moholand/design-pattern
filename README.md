@@ -25,7 +25,7 @@
   <li>Command: Create calculator</li>
   <li>Iterator: Select candidate algorithm</li>
   <li>Mediato: Chat applicationr</li>
-  <li>Memento: Calculator</li>
+  <li>Memento</li>
   <li>Observer</li>
   <li>State</li>
   <li>Strategy</li>
