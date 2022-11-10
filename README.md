@@ -24,7 +24,7 @@
   <li>Chain of Responsibility: Create middleware</li>
   <li>Command: Create calculator</li>
   <li>Iterator: Select candidate algorithm</li>
-  <li>Mediato: Chat applicationr</li>
+  <li>Mediato</li>
   <li>Memento</li>
   <li>Observer</li>
   <li>State</li>
