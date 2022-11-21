@@ -22,7 +22,7 @@
 <h5>Behavioral Design Patterns</h5>
 <ul>
   <li>Chain of Responsibility: Create middleware</li>
-  <li>Command: Create calculator</li>
+  <li>Command</li>
   <li>Iterator</li>
   <li>Mediato</li>
   <li>Memento</li>
