@@ -17,7 +17,7 @@
   <li>Decorator: Add feature to product group</li>
   <li>Facade: Create slug</li>
   <li>Flyweight: Post a job position</li>
-  <li>Proxy: Text viewer project</li>
+  <li>Proxy</li>
 </ul>
 <h5>Behavioral Design Patterns</h5>
 <ul>
