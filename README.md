@@ -11,11 +11,11 @@
 </ul>
 <h5>Structural Design Patterns</h5>
 <ul>
-  <li>Adapter: Shared message on social networks</li>
-  <li>Bridge: Display user information</li>
-  <li>Composite: Create Todo list</li>
-  <li>Decorator: Add feature to product group</li>
-  <li>Facade: Create slug</li>
+  <li>Adapter</li>
+  <li>Bridge</li>
+  <li>Composite</li>
+  <li>Decorator</li>
+  <li>Facade</li>
   <li>Flyweight</li>
   <li>Proxy</li>
 </ul>
