@@ -3,11 +3,11 @@
 
 <h5>Creational Design Patterns</h5>
 <ul>
-  <li>Factory Method: Create user with different roles</li>
-  <li>Abstract Factory: Create job positions</li>
-  <li>Builder: Create CV for candidate</li>
-  <li>Prototype: Post job position</li>
-  <li>Singleton: Post job position</li>
+  <li>Factory Method</li>
+  <li>Abstract Factory</li>
+  <li>Builder</li>
+  <li>Prototype</li>
+  <li>Singleton</li>
 </ul>
 <h5>Structural Design Patterns</h5>
 <ul>
